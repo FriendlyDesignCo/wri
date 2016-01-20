@@ -154,18 +154,27 @@ h6 { font-size: 1.6rem; line-height: 1.6;  letter-spacing: 0; }
 
 h1 { font-size: 5.6rem; }
   h2 { font-size: 4.2rem; }
-  h3 { font-size: 2.2rem; font-family: Georgia, "Times New Roman", Times, serif;}
+  h3 { font-size: 2.2rem; font-family: Georgia, "Times New Roman", Times, serif; padding-top:1em;}
   h4 { font-size: 2.2rem; color: #666;}
   h5 { font-size: 1.6rem; font-family: 'arial_mt_stdbold_cond', Arial, sans-serif; color: #333; }
   h6 { font-size: 1.6rem; font-family: 'arial_mt_stdbold_cond', Arial, sans-serif; color: #7D0063; font-weight: 100;   }
 
-
+p{
+    line-height: 1.9em;
+    font-size:1.6rem;
+}
  
 
 /* Additions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.boxbullet{
+    line-height: 2.5rem;
+}
 
-
+.signature{
+    line-height: 1.4em;
+    font-size:1em;
+}
 
 .titlesubhead { 
     font-size: 2.0rem;
@@ -229,7 +238,7 @@ th {
 
 .summary {
     font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     line-height: 1.6;
     color: #000;
     }
