@@ -159,59 +159,14 @@ h1 { font-size: 5.6rem; }
   h5 { font-size: 1.6rem; font-family: 'arial_mt_stdbold_cond', Arial, sans-serif; color: #333; }
   h6 { font-size: 1.6rem; font-family: 'arial_mt_stdbold_cond', Arial, sans-serif; color: #7D0063; font-weight: 100;   }
 
-
 p{
     line-height: 1.9em;
     font-size:1.6rem;
 }
  
-ul{
-    list-style: square inside;
-    padding-bottom: 5px;
-    margin-left: 5px;
-    line-height:1.9em;
-    font-size:1.6rem;
-}
-
 
 /* Additions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button.button-primary{
-    color: #FFF;
-    border-color: #CCC;
-    background-color: #CCC
-}
-
-button{
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif;
-    display: inline-block;
-    background-color: transparent;
-    border-radius: 4px;
-    color: #555;
-    text-align: center;
-    font-size: 11px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #bbb;
-    height: 38px;
-    line-height: 38px;
-    padding: 0 30px;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    white-space: nowrap;
-    box-sizing: border-box;
-}
-
-button:hover{
-    background-color:#E0DFDF;
-    border-color:none;
-}
-
-.sectionheader{
-    padding-bottom:5px;
-}
-
 .boxbullet{
     line-height: 2.5rem;
 }
@@ -237,33 +192,15 @@ button:hover{
     }
 
 
-
-
 .box { 
     background-color: #7D0063;
     color: #FFF;
-    padding: 20px;
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin-right:20px;
-    }
-
-
-.rightbox { 
-    background-color: #7D0063;
-    color: #FFF;
-    padding-left:25px;
-    padding-right:25px; 
-    padding-top:15px;
-    padding-bottom:15px;
+    padding: 10px;
     font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
      font-size: 1.5rem;
      margin-bottom: 10px;
     }
-
-
-.box h1, .rightbox h1 { 
+.box h1 { 
     text-transform: uppercase;  
     font-family: 'arial_mt_stdbold_cond', Arial, sans-serif; 
     font-size: 1.5rem;
