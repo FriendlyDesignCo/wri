@@ -52,6 +52,11 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    a {
+        color: $main_color;
+        font-family: $header-font;
+        font-size: 2.2rem;
+    }
 }
 
 
@@ -178,21 +183,6 @@ body {
     
 }
 
-/* MIX-INS */
-@mixin breakpoint($point) {
-	@if $point == large {
-		@media only screen and (min-width : 1401px) { @content; }
-	}
-	@else if $point == landscape {
-		@media only screen and (min-width : 802px) and (max-width : 1025px) { @content; }
-	}
-	@else if $point == portrait {
-		@media only screen and (min-width : 642px) and (max-width : 801px) { @content; }
-	}
-	@else if $point == mobile {
-		@media only screen and (max-width : 641px) { @content; }
-	}
-}
 @mixin calc($property, $expression) {
   #{$property}: -moz-calc(#{$expression});
   #{$property}: -o-calc(#{$expression});
@@ -253,7 +243,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6{ 
-  font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+  font-family: $header-font; 
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0px; /* 2rem; */ 
@@ -275,8 +265,8 @@ h6 { font-size: 1.6rem; line-height: 1.6;  letter-spacing: 0; }
     h2 { font-size: 4.2rem; }
     h3 { font-size: 2.2rem; font-family: Georgia, "Times New Roman", Times, serif; padding-top:1em;}
     h4 { font-size: 2.2rem; color: #666;}
-    h5 { font-size: 1.6rem; font-family: 'arial_mt_stdbold_cond', Arial, sans-serif; color: #333; }
-    h6 { font-size: 1.6rem; font-family: 'arial_mt_stdbold_cond', Arial, sans-serif; color: #7D0063; font-weight: 100;   }
+    h5 { font-size: 1.6rem; font-family: $header-font-alt; color: #333; }
+    h6 { font-size: 1.6rem; font-family: $header-font-alt; color: #7D0063; font-weight: 100;   }
 
 }
 
@@ -303,7 +293,7 @@ button.button-primary{
 }
 
 button{
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif;
+    font-family: $header-font;
     display: inline-block;
     background-color: transparent;
     border-radius: 4px;
@@ -363,7 +353,7 @@ button:hover{
     background-color: #7D0063;
     color: #FFF;
     padding: 20px;
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
     font-size: 1.5rem;
     margin-bottom: 10px;
     margin-right:20px;
@@ -377,7 +367,7 @@ button:hover{
     padding-right:25px; 
     padding-top:15px;
     padding-bottom:15px;
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
      font-size: 1.5rem;
      margin-bottom: 10px;
     }
@@ -385,7 +375,7 @@ button:hover{
 
 .box h1, .rightbox h1 { 
     text-transform: uppercase;  
-    font-family: 'arial_mt_stdbold_cond', Arial, sans-serif; 
+    font-family: $header-font-alt; 
     font-size: 1.5rem;
     line-height: 1.8rem;
     color: #FFF;
@@ -396,7 +386,7 @@ button:hover{
     }
 
 .tabletitle {   
-    font-family: 'arial_mt_stdbold_cond', Arial, sans-serif; 
+    font-family: $header-font-alt; 
     font-size: 1.5rem;
     color: #7D0063;
     }
@@ -414,13 +404,13 @@ th {
     }   
     
 .sidebar {
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
     font-size: 1.3rem;
     line-height: 1.4;
 }
 
 .summary {
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
     font-size: 2.4rem;
     line-height: 1.6;
     color: #000;
@@ -433,7 +423,7 @@ th {
     
 .footer { 
     background-color: #F0AB00;
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
     color: #FFF;
     padding-top: 20px;
     font-size: 1.3rem;  
@@ -450,13 +440,13 @@ th {
     }
     
 .references {
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
     font-size: 1.5rem;
     line-height: 1.4;
     color: #333;
     }   
 .charts {
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
     font-size: 1.3rem;
     line-height: 1.5rem;
     color: #333;
@@ -472,7 +462,7 @@ th {
     
 .share { 
     float: right;
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
     width: 75px;
     font-size: 1.2rem;
     color: #FFF;
@@ -484,7 +474,7 @@ th {
     }   
     
 .nav {
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
     font-size: 1.7rem;
     color: #7D0063;
     text-decoration: none;
@@ -497,7 +487,7 @@ th {
   color: #7D0063; }
   
 .navmain li a {
-    font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
+    font-family: $header-font; 
     font-size: 1.6rem;
     color: #7D0063;
     text-decoration: none;
@@ -519,7 +509,7 @@ th {
     list-style: none;
     margin-left: 0;   
     margin-bottom: .1rem;
-    }
+}
   
   
 .endnotes td, .endnotes td:first-child {
