@@ -138,7 +138,7 @@ progress::-moz-progress-bar {
 
 .row {
  width: 100%;
- max-width: 960px;
+ max-width: 2000px;
  margin: 0 auto;
  position: relative;
  padding: 0 2%;
@@ -173,13 +173,16 @@ body {
     background-image: url("../img/section1.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
-    
 }	
+
 .chapter2 {
     background-image: url("../img/section2.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
     
@@ -187,12 +190,16 @@ body {
 .chapter3 {
     background-image: url("../img/section3.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
 }
 .chapter4 {
     background-image: url("../img/section4.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
     
@@ -200,6 +207,9 @@ body {
 .chapter5 {
     background-image: url("../img/section5.jpg");
     background-size: cover;
+    width:100%;
+    background-position: center;
+    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
     
@@ -207,6 +217,8 @@ body {
 .chapter6 {
     background-image: url("../img/section6.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
     
@@ -214,6 +226,8 @@ body {
 .chapter7 {
     background-image: url("../img/section7.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
     
@@ -221,6 +235,8 @@ body {
 .chapter8 {
     background-image: url("../img/section8.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
     
@@ -228,6 +244,8 @@ body {
 .chapter9 {
     background-image: url("../img/section9.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
     
@@ -316,23 +334,25 @@ h6 { font-size: 1.6rem; line-height: 1.6;  letter-spacing: 0; }
     h3 { font-size: 2.2rem; font-family: Georgia, "Times New Roman", Times, serif; padding-top:1em;}
 
     h4 { font-size: 2.2rem; color: #666;}
-    h5 { font-size: 1.6rem; font-family: $header-font-alt; color: #333; }
+    h5 { font-size: 1.6rem; font-family: $header-font-alt; color: #333; padding-top:5px;}
     h6 { font-size: 1.6rem; font-family: $header-font-alt; color: #7D0063; font-weight: 100;   }
 
 }
 
 p{
     line-height: 1.9em;
-    font-size:1.6rem;
+    font-size:1.8rem;
+    font-weight:300;
+    letter-spacing: 0.25px;
 }
  
 ul{
     list-style: square inside;
     padding-bottom: 5px;
-    margin-left: 5px;
     line-height:1.7em;
     font-size:1.6rem;
 }
+
 
 
 /* Additions
@@ -458,6 +478,8 @@ th {
     color:white;
     padding:10px;
     }  
+
+
 
 th, td{
     padding: 12px 15px;
