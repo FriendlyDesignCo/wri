@@ -50,16 +50,25 @@ nav {
     padding: 30px;
     transition: all .4s linear;
     transform: translateY(-700px);
+    border-bottom: 1px solid lightgray;
 }
 
 .nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
+    padding-top: 20px;
     a {
         color: $main_color;
         font-family: $header-font;
         font-size: 2.2rem;
+    }
+    li:hover {
+        background-color: $brand_color;
+        a {
+            color: white;
+        }
     }
 }
 
@@ -84,7 +93,7 @@ header label {
 
 .hamburger li {
     width: 30px;
-    background-color: $main_color;
+    background-color: gray;
     height: 3px;
     margin-bottom: 5px;
 }
@@ -119,7 +128,7 @@ progress {
   background-color: transparent;
 
   /* Progress bar value for IE10+ */
-  color: $main_color;
+  color: $brand_color;
 }
 
 progress::-webkit-progress-bar {
@@ -127,11 +136,11 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: $main_color;
+  background-color: $brand_color;
 }
 
 progress::-moz-progress-bar {
-  background-color: $main_color;
+  background-color: $brand_color;
 }
 
 /****** end menu ******/
