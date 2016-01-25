@@ -151,7 +151,7 @@ nav ul a {
 
 .row {
  width: 100%;
- max-width: 940px;
+ max-width: 960px;
  margin: 0 auto;
  position: relative;
  padding: 0 2%;
@@ -448,7 +448,7 @@ ul{
     list-style: square inside;
     padding-bottom: 5px;
     margin-left: 5px;
-    line-height:1.9em;
+    line-height:1.7em;
     font-size:1.6rem;
 }
 
@@ -495,6 +495,10 @@ button:hover{
     line-height: 2.5rem;
 }
 
+.boxbullet li{
+    padding-bottom:15px;
+}
+
 .signature{
     line-height: 1.4em;
     font-size:1em;
@@ -532,13 +536,11 @@ button:hover{
 .rightbox { 
     background-color: #7D0063;
     color: #FFF;
-    padding-left:25px;
-    padding-right:25px; 
-    padding-top:15px;
-    padding-bottom:15px;
+    padding:40px;
     font-family: 'arial_mt_stdlight_cond', Arial, sans-serif; 
      font-size: 1.5rem;
-     margin-bottom: 10px;
+     margin-top: 20px;
+     margin-left:15px;
     }
 
 
@@ -562,7 +564,22 @@ button:hover{
 
 th { 
     border-left: 1px solid #FFF;
-    }   
+    background-color:black;
+    color:white;
+    padding:10px;
+    }  
+
+th, td{
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #E1E1E1;
+    line-height:1.6em;
+} 
+
+.purple{
+    background-color:#f2e6f0;
+}
     
 .tablesub th { 
     background-color: #666;
