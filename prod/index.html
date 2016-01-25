@@ -49,14 +49,23 @@
 <body>
 
     <header class="main_h">
-      <div class="row"> <a class="logo" href="http://www.wri.org"><img src="/img/logo_wri_25.png"></a>
-          <div class="menutitle">
-          <p>Designed For The Future? Assessing Principles of Sustained Development and Governance in the World Bank's Project Plans</p>
-          </div>
-            <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
-            <nav>
-              <ul>
-                  <li><a href="#s1">Foreword</a></li>      
+      
+        <div class="menu-title">
+            <a class="logo" href="http://www.wri.org"><img src="/img/logo_wri_25.png"></a>
+            <p class="title hide-mobile">Designed For The Future? Assessing Principles of Sustained Development and Governance in the World Bank's Project Plans</p>
+        </div>
+        <label for="showblock" class="show-mobile hide-desktop">
+            <ul class='hamburger'>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </label>
+        <input type="checkbox" id="showblock" />
+        <nav>
+            <p class="title show-mobile">Designed For The Future? Assessing Principles of Sustained Development and Governance in the World Bank's Project Plans</p>
+            <ul class="nav-list">
+                <li><a href="#s1">Foreword</a></li>      
                   <li><a href="#s2">Executive Summary</a></li>
                   <li><a href="#s3">Section I: Introduction</a></li>
                   <li><a href="#s4">Section II: The Assessment Framework</a></li>
@@ -66,9 +75,9 @@
                   <li><a href="#s8">Annexes</a></li>
                   <li><a href="#s9">References</a></li>
                   <li><a href="#s10">Endnotes</a></li>      
-              </ul>
-            </nav>
-          </div>
+            </ul>
+        </nav>
+          
           <!-- / row --> 
     </header>       
 
