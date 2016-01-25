@@ -93,7 +93,17 @@ header label {
     transform: translateY(0px);
 }
 
+
 /****** end menu ******/
+
+.row {
+ width: 100%;
+ max-width: 960px;
+ margin: 0 auto;
+ position: relative;
+ padding: 0 2%;
+}
+
 
 body {
     padding-top: 50px;
@@ -264,6 +274,7 @@ h6 { font-size: 1.6rem; line-height: 1.6;  letter-spacing: 0; }
     h1 { font-size: 5.6rem; }
     h2 { font-size: 4.2rem; }
     h3 { font-size: 2.2rem; font-family: Georgia, "Times New Roman", Times, serif; padding-top:1em;}
+
     h4 { font-size: 2.2rem; color: #666;}
     h5 { font-size: 1.6rem; font-family: $header-font-alt; color: #333; }
     h6 { font-size: 1.6rem; font-family: $header-font-alt; color: #7D0063; font-weight: 100;   }
@@ -279,7 +290,7 @@ ul{
     list-style: square inside;
     padding-bottom: 5px;
     margin-left: 5px;
-    line-height:1.9em;
+    line-height:1.7em;
     font-size:1.6rem;
 }
 
@@ -326,6 +337,10 @@ button:hover{
     line-height: 2.5rem;
 }
 
+.boxbullet li{
+    padding-bottom:15px;
+}
+
 .signature{
     line-height: 1.4em;
     font-size:1em;
@@ -365,11 +380,11 @@ button:hover{
     color: #FFF;
     padding-left:25px;
     padding-right:25px; 
-    padding-top:15px;
-    padding-bottom:15px;
+    padding:40px;
     font-family: $header-font; 
      font-size: 1.5rem;
-     margin-bottom: 10px;
+     margin-top: 20px;
+     margin-left:15px;
     }
 
 
@@ -391,9 +406,30 @@ button:hover{
     color: #7D0063;
     }
 
+.pullquote{
+     font-size: 3rem; 
+     line-height:1.6em;
+     color: #7D0063;
+}
+
 th { 
     border-left: 1px solid #FFF;
-    }   
+    background-color:black;
+    color:white;
+    padding:10px;
+    }  
+
+th, td{
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #E1E1E1;
+    line-height:1.6em;
+} 
+
+.purple{
+    background-color:#f2e6f0;
+}
     
 .tablesub th { 
     background-color: #666;
