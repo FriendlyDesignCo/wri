@@ -447,6 +447,7 @@ ul{
     padding-bottom: 5px;
     line-height:1.7em;
     font-size:1.6rem;
+    margin-left:-1.6em;
 }
 
 
@@ -456,6 +457,7 @@ ul{
 
 .container{
     max-width:100%;
+    overflow:hidden;
 }
 
 .video-container iframe{
