@@ -1774,7 +1774,7 @@
             //valuePrefix: '',
             //valueSuffix: ''
         },
-
+        // watermark
         credits: {
             enabled: true,
             text: 'World Resource Institute',
