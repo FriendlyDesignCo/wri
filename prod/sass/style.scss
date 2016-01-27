@@ -172,6 +172,8 @@ body {
 }
 
 
+/*full width images -- mobile size */
+
 .chapter0 {
     background-image: url("../img/cover.jpg");
     background-size: cover;
@@ -182,10 +184,93 @@ body {
     background-image: url("../img/section1.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
 }	
+
+.chapter2 {
+    background-image: url("../img/section2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    margin-bottom: 30px;
+    
+}
+.chapter3 {
+    background-image: url("../img/section3.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+.chapter4 {
+    background-image: url("../img/section4.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    margin-bottom: 30px;
+    
+}
+.chapter5 {
+    background-image: url("../img/section5.jpg");
+    background-size: cover;
+    width:100%;
+    background-position: center;
+    color: #FFF;
+    margin-bottom: 30px;
+    
+}
+.chapter6 {
+    background-image: url("../img/section6.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    margin-bottom: 30px;
+    
+}
+.chapter7 {
+    background-image: url("../img/section7.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    margin-bottom: 30px;
+    
+}
+.chapter8 {
+    background-image: url("../img/section8.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    margin-bottom: 30px;
+    
+}
+.chapter9 {
+    background-image: url("../img/section9.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    margin-bottom: 30px;
+    
+}
+
+
+/* full width images for devices larger than 550px */
+
+@media (min-width: 550px) {
+    .chapter0 {
+    background-image: url("../img/cover.jpg");
+    background-size: cover;
+    color: #FFF;
+}       
+    
+.chapter1 {
+    background-image: url("../img/section1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFF;
+    margin-bottom: 30px;
+}   
 
 .chapter2 {
     background-image: url("../img/section2.jpg");
@@ -259,6 +344,8 @@ body {
     margin-bottom: 30px;
     
 }
+}
+
 
 @mixin calc($property, $expression) {
   #{$property}: -moz-calc(#{$expression});
@@ -360,12 +447,23 @@ ul{
     padding-bottom: 5px;
     line-height:1.7em;
     font-size:1.6rem;
+    margin-left:-1.6em;
 }
 
 
 
 /* Additions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container{
+    max-width:100%;
+    overflow:hidden;
+}
+
+.video-container iframe{
+    width:100%;
+}
+
 button.button-primary{
     color: #FFF;
     border-color: #CCC;
