@@ -44,6 +44,9 @@
 
 p.title {
     font-family: $header-font;
+    letter-spacing:0.01px;
+    font-size:1.15em;
+    font-weight:700;
 }
 
 nav {
@@ -442,6 +445,7 @@ p{
     font-size:1.8rem;
     font-weight:300;
     letter-spacing: 0.25px;
+    font-family: Georgia, serif; 
 }
  
 ul{
@@ -457,7 +461,7 @@ ul{
 /* Additions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .headersize{
-    font-size:5.6em;
+    font-size:3.6em;
 }
 
 .leftalign{
@@ -523,7 +527,7 @@ button:hover{
 }
 
 .titlesubhead { 
-    font-size: 2.3rem;
+    font-size: 1.4rem;
     font-style: italic;
     color:white;
     letter-spacing: 0.5px;
@@ -629,7 +633,7 @@ th, td{
 }
 
 .summary {
-    font-family: $header-font; 
+    font-family: $header-font-alt; 
     font-size: 2.4rem;
     line-height: 1.6;
     color: #000;
