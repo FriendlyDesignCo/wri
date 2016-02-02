@@ -2,10 +2,14 @@ $(document).ready(function(){
 	$(".nav-list a").click(function(){
 		$("input#showblock").prop('checked', false);
 		$(".body-container").removeClass("menu-active");
+		$(".menu-title").removeClass("menu-active");
+		$(".hamburger").removeClass("active");
 	});
 
 	$("header label").click(function() {
 		$(".body-container").toggleClass("menu-active");
+		$(".menu-title").toggleClass("menu-active");
+		$(".hamburger").toggleClass("active");
 	})
 
 	var winHeight = $(window).height(), 
