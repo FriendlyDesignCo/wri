@@ -1,7 +1,12 @@
 $(document).ready(function(){ 
 	$(".nav-list a").click(function(){
 		$("input#showblock").prop('checked', false);
+		$(".body-container").removeClass("menu-active");
 	});
+
+	$("header label").click(function() {
+		$(".body-container").toggleClass("menu-active");
+	})
 
 	var winHeight = $(window).height(), 
       	docHeight = $(document).height(),
