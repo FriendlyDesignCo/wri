@@ -60,6 +60,7 @@ nav {
     top: 0;
     z-index: 99;
     right: 0;
+    overflow-y: scroll;
     height: 100vh;
     border-bottom: 1px solid lightgray;
 }
@@ -76,9 +77,10 @@ nav {
         font-size: 2.2rem;
     }
     li {
+        border-bottom: 1px dotted gray;
         padding: 15px;
     }
-    li + li {
+    li:first-of-type {
         border-top: 1px dotted gray;
     }
     li:hover {
