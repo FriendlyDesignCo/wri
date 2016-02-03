@@ -213,7 +213,7 @@ body {
 }
 
 
-/*full width images -- mobile size */
+/*full width images */
 
 .chapter0 {
     background-image: url("../img/cover.jpg");
@@ -222,7 +222,7 @@ body {
 }		
 	
 .chapter1 {
-    background-image: url("../img/section1.jpg");
+    background-image:url("../img/section1_mobile.jpg");
     background-size: cover;
     background-position: center;
     color: #FFF;
@@ -238,7 +238,7 @@ body {
     
 }
 .chapter3 {
-    background-image: url("../img/section3.jpg");
+    background-image: url("../img/section3_mobile.jpg");
     background-size: cover;
     background-position: center;
     color: #FFF;
@@ -298,7 +298,7 @@ body {
 /* full width images for devices larger than 550px */
 
 @media (min-width: 550px) {
-    .chapter0 {
+.chapter0 {
     background-image: url("../img/cover.jpg");
     background-size: cover;
     color: #FFF;
@@ -383,8 +383,9 @@ body {
     background-attachment: fixed;
     color: #FFF;
     margin-bottom: 30px;
-    
 }
+
+
 }
 
 
@@ -496,6 +497,10 @@ ul{
 
 /* Additions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.tablewrapper{
+    overflow-x:scroll;
+}
+
 .headersize{
     font-size:3.7em;
 }
