@@ -219,6 +219,7 @@ body {
 
 /*full width images */
 
+
 .chapter0 {
     background-image: url("../img/cover.jpg");
     background-size: cover;
@@ -502,6 +503,10 @@ ul{
 
 /* Additions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.tochead{
+    color:#000;
+}
+
 .tablewrapper{
     overflow-x:scroll;
 }
@@ -747,7 +752,7 @@ th, td{
     font-size: 1.7rem;
     color: #7D0063;
     text-decoration: none;
-    }
+}
     
 .nav:hover { 
   color: #000;
