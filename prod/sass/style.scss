@@ -72,7 +72,7 @@ nav {
     text-align: center;
     padding-top: 20px;
     a {
-        color: $brand_color;
+        color: white;
         font-family: $header-font;
         font-size: 2.2rem;
     }
@@ -84,9 +84,8 @@ nav {
         border-top: 1px dotted gray;
     }
     li:hover {
-        background-color: $brand_color;
         a {
-            color: white;
+            color: $brand_color;
             text-decoration:none;
         }
     }
