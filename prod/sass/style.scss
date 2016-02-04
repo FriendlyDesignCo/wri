@@ -492,6 +492,7 @@ p{
 }
  
 ul{
+    font-family:$header-font-alt;
     list-style: square outside;
     padding-bottom: 5px;
     line-height:1.7em;
@@ -499,7 +500,9 @@ ul{
     margin-left:-1.2em;
 }
 
-
+ol{
+    font-family:$header-font-alt;
+}
 
 /* Additions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -594,13 +597,15 @@ button:hover{
 }
 
 
-
+.box p{
+    font-family:$header-font-alt;
+}
 
 .box { 
     background-color: #7D0063;
     color: #FFF;
     padding: 20px;
-    font-family: $header-font; 
+    font-family: $header-font-alt; 
     font-size: 1.5rem;
     margin-bottom: 10px;
     margin-right:20px;
@@ -622,7 +627,7 @@ button:hover{
 
 .box h1, .rightbox h1 { 
     text-transform: uppercase;  
-    font-family: $header-font-alt; 
+    font-family: $header-font; 
     font-size: 1.5rem;
     line-height: 1.8rem;
     color: #FFF;
@@ -793,6 +798,7 @@ th, td{
 .endnotes td, .endnotes td:first-child {
     border: none;
     padding: 3px 0;
+    font-family: $header-font-alt;
 }  
 
 .invis {
