@@ -10,6 +10,13 @@
 }
 
 
+.chart-container {
+    font-family: $header-font-alt;
+    tspan, .highcharts-axis {
+        font-family: $header-font-alt;
+    }
+}
+
 /****** menu ******/
 .main_h {
     position: absolute;
