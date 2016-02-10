@@ -475,7 +475,7 @@ body {
 
 h1, h2, h3, h4, h5, h6{ 
   font-family: $header-font; 
-  font-weight: 300;
+  //font-weight: 300;
   margin-top: 0;
   margin-bottom: 0px; /* 2rem; */ 
   color: $main_color; }
@@ -638,6 +638,7 @@ button:hover{
     padding-right:25px; 
     padding:40px;
     font-family: $header-font; 
+     font-weight:600;
      font-size: 1.5rem;
      margin-top: 20px;
      margin-left:15px;
@@ -647,6 +648,7 @@ button:hover{
 .box h1, .rightbox h1 { 
     text-transform: uppercase;  
     font-family: $header-font; 
+    font-weight:600;
     font-size: 1.5rem;
     line-height: 1.8rem;
     color: #FFF;
@@ -703,6 +705,7 @@ th, td{
     
 .sidebar {
     font-family: $header-font; 
+    font-weight:600;
     font-size: 1.3rem;
     line-height: 1.4;
 }
@@ -722,6 +725,7 @@ th, td{
 .footer { 
     background-color: #F0AB00;
     font-family: $header-font; 
+    font-weight:600;
     color: #FFF;
     padding-top: 20px;
     font-size: 1.3rem;  
@@ -739,6 +743,7 @@ th, td{
     
 .references {
     font-family: $header-font; 
+    font-weight:600;
     font-size: 1.5rem;
     line-height: 1.4;
     color: #333;
@@ -746,6 +751,7 @@ th, td{
 
 .charts {
     font-family: $header-font; 
+    font-weight:600;
     font-size: 1.3rem;
     line-height: 1.5rem;
     color: #333;
@@ -763,6 +769,7 @@ th, td{
 .share { 
     float: right;
     font-family: $header-font; 
+    font-weight:600;
     width: 75px;
     font-size: 1.2rem;
     color: #FFF;
@@ -775,6 +782,7 @@ th, td{
     
 .nav {
     font-family: $header-font; 
+    font-weight:600;
     font-size: 1.7rem;
     color: #7D0063;
     text-decoration: none;
@@ -789,6 +797,7 @@ th, td{
   
 .navmain li a {
     font-family: $header-font; 
+    font-weight:600;
     font-size: 1.6rem;
     color: #7D0063;
     text-decoration: none;
