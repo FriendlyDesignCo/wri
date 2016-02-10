@@ -121,63 +121,77 @@ $(function () {
             }
         });
     });
+
     $('#chartContainerES2').highcharts({
         chart: {
-            type: 'area'
+            type: 'column'
         },
         title: {
-            text: 'Historic and Estimated Worldwide Population Growth by Region'
-        },
-        subtitle: {
-            text: 'Source: Wikipedia.org'
+            text: "Geographical Distribution of China's OFDI Stock, 2004 and 2013"
         },
         xAxis: {
-            categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
-            tickmarkPlacement: 'on',
-            title: {
-                enabled: false
-            }
+            categories: [ '2004','2012','2013 (excluding OFCs*']
         },
         yAxis: {
+            min: 0,
             title: {
-                text: 'Billions'
+                text: ''
             },
             labels: {
-                formatter: function () {
-                    return this.value / 1000;
+                enabled: false
+            },
+            stackLabels: {
+                enabled: false,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
                 }
             }
         },
+         legend: {
+            align: 'right',
+            verticalAlign: 'top',
+            y: 100,
+            layout: 'vertical'
+        },
         tooltip: {
-            shared: true,
-            valueSuffix: ' millions'
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
         },
         plotOptions: {
-            area: {
+            column: {
                 stacking: 'normal',
-                lineColor: '#666666',
-                lineWidth: 1,
-                marker: {
-                    lineWidth: 1,
-                    lineColor: '#666666'
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%',
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                    style: {
+                        //textShadow: '0 0 3px black'
+                        textShadow: '0'
+                    }
                 }
             }
         },
         series: [{
-            name: 'Asia',
-            data: [502, 635, 809, 947, 1402, 3634, 5268]
+            name: 'Oceania',
+            data: [2, 2, 2],
+            color: color_1
         }, {
             name: 'Africa',
-            data: [106, 107, 111, 133, 221, 767, 1766]
+            data: [1, 2, 4],
+            color: color_2
+        }, {
+            name: 'North America',
+            data: [5, 3, 4],
+            color: color_3
         }, {
             name: 'Europe',
-            data: [163, 203, 276, 408, 547, 729, 628]
+            data: [4, 2, 3],
+            color: color_4
         }, {
-            name: 'America',
-            data: [18, 31, 54, 156, 339, 818, 1201]
-        }, {
-            name: 'Oceania',
-            data: [2, 2, 2, 6, 13, 30, 46]
+            name: 'Asia',
+            data: [1, 1, 1],
+            color: color_5
         }]
     });
 });
