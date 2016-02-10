@@ -11,9 +11,9 @@
 
 
 .chart-container {
-    font-family: $header-font-alt;
+    font-family: $header-font;
     tspan, .highcharts-axis {
-        font-family: $header-font-alt;
+        font-family: $header-font;
     }
 }
 
@@ -739,7 +739,7 @@ th, td{
     
 .references {
     font-family: $header-font; 
-    font-weight:600;
+    font-weight:300;
     font-size: 1.5rem;
     line-height: 1.4;
     color: #333;
@@ -778,7 +778,7 @@ th, td{
     
 .nav {
     font-family: $header-font; 
-    font-weight:600;
+    font-weight:300;
     font-size: 1.7rem;
     color: #7D0063;
     text-decoration: none;
@@ -793,7 +793,7 @@ th, td{
   
 .navmain li a {
     font-family: $header-font; 
-    font-weight:600;
+    font-weight:300;
     font-size: 1.6rem;
     color: #7D0063;
     text-decoration: none;
