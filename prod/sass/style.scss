@@ -12,8 +12,6 @@
 
 .chart-container {
     font-family: $header-font;
-
-    margin: 40px auto;
     tspan, .highcharts-axis {
         font-family: $header-font;
     }
@@ -528,6 +526,26 @@ ol{
 
 /* Additions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.secondarybullet ul{
+    //list-style-image: url("../img/squareoutline.ico");
+    list-style-type: none;
+}
+
+.secondarybullet li{
+    position:relative;
+}
+
+.secondarybullet li:before{
+    content:"";
+    position:absolute;
+    background-image:url("../img/squareoutline.ico");
+    width:8px;
+    height:8px;
+    background-size:cover;
+    background-position:center;
+    left:-15px;
+    top:10px;
+}
 
 .liststyle{
     color:#7D0063;
@@ -766,6 +784,7 @@ th, td{
 
 .charts p {
     margin: 5px;
+    font-family:$header-font-2;
     }   
     
 .gray { 
@@ -846,7 +865,7 @@ th, td{
 
 
 #chartContainerES1 {
-    min-width: 310px; height: 400px; max-width: 800px; 
+    min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto
 }
 
 .body-container {
