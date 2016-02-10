@@ -11,9 +11,9 @@
 
 
 .chart-container {
-    font-family: $header-font;
-    tspan, .highcharts-axis {
-        font-family: $header-font;
+    font-family: $header-font-2;
+    tspan, .highcharts-axis, .highcharts-legend-item {
+        font-family: $header-font-2;
     }
 }
 
