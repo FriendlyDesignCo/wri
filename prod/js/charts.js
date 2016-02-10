@@ -195,4 +195,58 @@ $(function () {
             color: color_5
         }]
     });
+
+
+    $('#chartContainerES3').highcharts({
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            //text: 'Contents of Highsoft\'s weekly fruit delivery'
+            text: 'Outward FDI Stock'
+        },
+        plotOptions: {
+            pie: {
+                innerSize: 150,
+                depth: 45,
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+
+        },
+        series: [{
+            name: 'Delivered amount',
+            data: [{
+                name: 'Other',
+                y: 10,
+                color: color_1
+            }, {
+                name: 'Manufacturing',
+                y: 6,
+                color: color_2
+            }, {
+                name: 'Transportation Storange & Post',
+                y: 6,
+                color: color_3
+            }, {
+                name: 'Leasing & Business Services',
+                y: 33,
+                color: color_4
+            }, {
+                name: 'Finance',
+                y: 18,
+                color: color_5
+            }, {
+                name: 'Mining',
+                y: 14,
+                color: color_6
+            }, {
+                name: 'Wholesale & Retail Trade',
+                y: 14,
+                color: color_7
+            }]
+        }]
+    });
 });
