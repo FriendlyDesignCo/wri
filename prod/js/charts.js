@@ -155,15 +155,16 @@ $(function () {
             layout: 'vertical'
         },
         tooltip: {
+            enabled: false,
             headerFormat: '<b>{point.x}</b><br/>',
             pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
         },
         plotOptions: {
             column: {
-                stacking: 'normal',
+                stacking: 'percent',
                 dataLabels: {
                     enabled: true,
-                    format: '{point.y:.1f}%',
+                    format: '{point.percentage:.0f}%',
                     color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
                     style: {
                         //textShadow: '0 0 3px black'
