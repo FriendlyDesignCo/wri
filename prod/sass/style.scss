@@ -12,6 +12,8 @@
 
 .chart-container {
     font-family: $header-font;
+
+    margin: 40px auto;
     tspan, .highcharts-axis {
         font-family: $header-font;
     }
@@ -844,7 +846,7 @@ th, td{
 
 
 #chartContainerES1 {
-    min-width: 310px; height: 400px; max-width: 800px; margin: 0 auto
+    min-width: 310px; height: 400px; max-width: 800px; 
 }
 
 .body-container {
