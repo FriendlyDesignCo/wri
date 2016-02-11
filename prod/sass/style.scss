@@ -526,6 +526,26 @@ ol{
 
 /* Additions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul ul {
+    list-style-type: none;
+    color:black;
+}
+ul ul li{
+    position:relative;
+    &:before {
+        content:"";
+        position:absolute;
+        background-image:url("../img/squareoutline.ico");
+        width:6px;
+        height:6px;
+        background-size:cover;
+        background-position:center;
+        left:-15px;
+        top:10px;
+    }
+}
+
+
 .secondarybullet ul{
     //list-style-image: url("../img/squareoutline.ico");
     list-style-type: none;
@@ -549,20 +569,12 @@ ol{
 }
 
 .secondarybullet li{
-    position:relative;
-    list-style-type:none;
+    //position:relative;
+    //list-style-type:none;
 }
 
 .secondarybullet li:before{
-    content:"";
-    position:absolute;
-    background-image:url("../img/squareoutline.ico");
-    width:8px;
-    height:8px;
-    background-size:cover;
-    background-position:center;
-    left:-15px;
-    top:10px;
+    
 }
 
 .liststyle{
