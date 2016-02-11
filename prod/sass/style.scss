@@ -497,12 +497,12 @@ h6 { font-size: 1.6rem; line-height: 1.6;  letter-spacing: 0; }
 
     h4 { font-size: 2.2rem; color: #666;}
     h5 { font-size: 1.8rem; font-family: $header-font; color: #333;}
-    h6 { font-size: 1.6rem; font-family: $header-font; color: #7D0063; font-weight: 100;}
+    h6 { font-size: 1.6rem; font-family: $header-font; color: $main_color; font-weight: 100;}
 
 }
 
 p{
-    line-height: 1.9em;
+    line-height: 1.7em;
     font-size:1.6rem;
     font-weight:300;
     letter-spacing: 0.25px;
@@ -530,18 +530,16 @@ ul ul {
     list-style-type: none;
     color:black;
 }
-ul ul li{
+.container ul ul li{
     position:relative;
     &:before {
-        content:"";
+        content:"\43064";
         position:absolute;
-        background-image:url("../img/squareoutline.ico");
-        width:6px;
-        height:6px;
+        // background-image:url("../img/squareoutline.ico");
         background-size:cover;
         background-position:center;
-        left:-15px;
-        top:10px;
+        font-size:10px;
+        left: -20px;
     }
 }
 
@@ -549,24 +547,14 @@ ul ul li{
 .secondarybullet ul{
     //list-style-image: url("../img/squareoutline.ico");
     list-style-type: none;
-    color:#7D0063;
+    color:$main_color;
 }
 
 .secondarybullet p{
     position:relative;
 }
 
-.secondarybullet p:before{
-    content:"";
-    position:absolute;
-    background-image:url("../img/squareoutline.ico");
-    width:8px;
-    height:8px;
-    background-size:cover;
-    background-position:center;
-    left:-15px;
-    top:10px;
-}
+
 
 .secondarybullet li{
     //position:relative;
@@ -578,12 +566,27 @@ ul ul li{
 }
 
 .liststyle{
-    color:#7D0063;
+    color:$main_color;
 }
 
 .liststyle p{
     color:black;
     margin:0;
+}
+
+.container ul li:before{
+    content:"\25A0";
+    position:absolute;
+    left:15px;
+    color:$main_color;
+}
+
+.box ul li:before{
+    color:#fff;
+}
+
+.container ul li{
+    list-style-type:none;
 }
 
 .tochead{
@@ -683,7 +686,7 @@ button:hover{
 }
 
 .box { 
-    background-color: #7D0063;
+    background-color: $main_color;
     color: #FFF;
     padding: 20px;
     font-size: 1.5rem;
@@ -693,7 +696,7 @@ button:hover{
 
 
 .rightbox { 
-    background-color: #7D0063;
+    background-color: $main_color;
     color: #FFF;
     padding-left:25px;
     padding-right:25px; 
@@ -722,7 +725,7 @@ button:hover{
 .tabletitle {   
     font-family: $header-font; 
     font-size: 1.5rem;
-    color: #7D0063;
+    color: $main_color;
     }
 
 
@@ -841,7 +844,7 @@ th, td{
     font-family: $header-font; 
     font-weight:300;
     font-size: 1.7rem;
-    color: #7D0063;
+    color: $main_color;
     text-decoration: none;
 }
     
@@ -850,13 +853,13 @@ th, td{
 }
   
 .nav:visited {
-  color: #7D0063; }
+  color: $main_color; }
   
 .navmain li a {
     font-family: $header-font; 
     font-weight:300;
     font-size: 1.6rem;
-    color: #7D0063;
+    color: $main_color;
     text-decoration: none;
     }
 
@@ -871,7 +874,7 @@ th, td{
 }
   
 .navmain li a:visited {
-  color: #7D0063;
+  color: $main_color;
     text-decoration: none;
      }
   
@@ -880,7 +883,15 @@ th, td{
     margin-left: 0;   
     margin-bottom: .1rem;
 }
-  
+
+.navmain li:before{
+    display:none;
+}
+
+.navmain{
+    margin:0;
+    padding:0;
+}
   
 .endnotes td, .endnotes td:first-child {
     border: none;
