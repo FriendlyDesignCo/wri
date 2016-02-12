@@ -1,13 +1,19 @@
 $(function () {
     // files with all the charts
-    var color_1 = '#F0AB00';
-    var color_2 = '#C51F24';
-    var color_3 = '#0099CC';
-    var color_4 = '#7D0063';
-    var color_5 = '#003F6A';
-    var color_6 = '#007A4D';
-    var color_7 = '#97BD3D';
+    var color_1 = '#F0AB00'; // brand yellow primary
+    var color_2 = '#C51F24'; // brand red secondary
+    var color_3 = '#0099CC'; // brand blue secondary
+    var color_4 = '#7D0063'; // brand purple secondary
+    var color_5 = '#003F6A'; // brand blue tertiary
+    var color_6 = '#007A4D'; // brand green tertiary
+    var color_7 = '#97BD3D'; // brand green secondary
 
+
+    /********************** Chart 1 ***********************/
+
+    /* Chart variable
+    /  Chart documentation: http://www.highcharts.com/docs 
+    */
     var chartContainerES1 = {  
         chart: {
             type: 'column'
@@ -34,13 +40,13 @@ $(function () {
         
         tooltip: {
             headerFormat: '<b>{point.x}</b><br/>',
-            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}' // you can retreive values for display and format tooltips
         },
         plotOptions: {
             column: {
                 stacking: 'normal',
                 dataLabels: {
-                    //enabled: true,
+                    enabled: false,
                     color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
                     style: {
                         //textShadow: '0 0 3px black'
@@ -59,7 +65,7 @@ $(function () {
             color: "#97BD3D"
         }, {
             name: '2014 tree cover loss',
-            data: [null, null, null, null, null, null, null, null, null, null, 4],
+            data: [null, null, null, null, null, null, null, null, null, null, 4], //null values create gaps. in this case, we're using to offset values
             color: color_1
         }, {
             name: '2014 tree cover loss in primary forests',
@@ -77,29 +83,26 @@ $(function () {
                 enabled: false
             }
         }]
-    }
+    };
+
+    // Chart init
     $('#chartContainerES1').highcharts(chartContainerES1);
 
+    /* Download button 
+    /  For consistency and ease of use, 
+    /  button naming convention is:
+    /       #button-{nameOfChart}
+    */
     $('#button-chartContainerES1').click(function () {
         var chart = $('#chartContainerES1').highcharts();
         chart.exportChart();
     });
 
-    /*var options = {
+    /********************** End chart 1 ***********************/
 
-        exporting: {
-            url: 'http://export.highcharts.com/'
-        },
-        xAxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-        },
-        series: [{
-            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-        }]
-    };*/
+    
 
-    $('#button').click(function () {
+    /*$('#button').click(function () {
         var chart = $('#chartContainerES1').highcharts();
         //chart.exportChart();
 
@@ -120,9 +123,9 @@ $(function () {
 
             }
         });
-    });
+    });*/
 
-    $('#chartContainerES2').highcharts({
+    var chartContainerES2 = {
         chart: {
             type: 'column'
         },
@@ -194,7 +197,9 @@ $(function () {
             data: [1, 1, 1],
             color: color_5
         }]
-    });
+    };
+
+    $('#chartContainerES2').highcharts(chartContainerES2);
 
 
     $('#chartContainerES3').highcharts({
@@ -207,8 +212,7 @@ $(function () {
         },
         plotOptions: {
             pie: {
-                innerSize: 150,
-                depth: 45,
+                innerSize: "70%", // size of inner gap, relative to size
                 dataLabels: {
                     enabled: true,
                     format: '<b>{point.name}</b>: {point.percentage:.1f} %'
