@@ -13,6 +13,7 @@ $(function () {
 
     /* Chart variable
     /  Chart documentation: http://www.highcharts.com/docs 
+    /  Another good resource, for chart config: http://api.highcharts.com/highcharts 
     */
     var chartContainerES1 = {  
         chart: {
@@ -124,7 +125,9 @@ $(function () {
             }
         });
     });*/
+    
 
+    /********************** Chart 2 ***********************/
     var chartContainerES2 = {
         chart: {
             type: 'column'
@@ -201,7 +204,11 @@ $(function () {
 
     $('#chartContainerES2').highcharts(chartContainerES2);
 
+    /********************** End chart 2 ***********************/
 
+
+    /********************** Chart 3 ***********************/
+    
     $('#chartContainerES3').highcharts({
         chart: {
             type: 'pie'
@@ -253,4 +260,5 @@ $(function () {
             }]
         }]
     });
+    /********************** Chart 3 ***********************/
 });
