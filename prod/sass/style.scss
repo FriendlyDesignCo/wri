@@ -107,7 +107,7 @@ nav {
     }
     li:hover {
         a {
-            color: $brand_color;
+            color: $brand_yellow_primary;
             text-decoration:none;
         }
     }
@@ -191,7 +191,7 @@ progress {
   background-color: transparent;
 
   /* Progress bar value for IE10+ */
-  color: $brand_color;
+  color: $brand_yellow_primary;
 }
 
 progress::-webkit-progress-bar {
@@ -199,11 +199,11 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: $brand_color;
+  background-color: $brand_yellow_primary;
 }
 
 progress::-moz-progress-bar {
-  background-color: $brand_color;
+  background-color: $brand_yellow_primary;
 }
 
 /****** end menu ******/
