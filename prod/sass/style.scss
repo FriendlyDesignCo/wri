@@ -12,7 +12,7 @@
 
 .chart-container {
     font-family: $header-font-2;
-    tspan, .highcharts-axis, .highcharts-legend-ite, .highcharts-axis-labels {
+    * {
         font-family: $header-font-2;
     }
     .highcharts-data-labels text {

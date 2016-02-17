@@ -8,6 +8,13 @@ $(function () {
     var color_6 = '#007A4D'; // brand green tertiary
     var color_7 = '#97BD3D'; // brand green secondary
 
+    Highcharts.setOptions({
+        chart: {
+            style: {
+                //fontFamily: '"'acumin-pro-condensed'\" "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif'
+            }
+        }
+    });
 
     /********************** Chart 1 ***********************/
 
