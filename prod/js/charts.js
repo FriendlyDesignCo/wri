@@ -30,10 +30,10 @@ $(function () {
         title: {
             text: "Tree Cover Loss in Indonesia's Primary Forests"
         },
-        subtitle: { // This is where the bitly link will go
+        subtitle: { // This is where the credits link will go
 
             useHTML: true,
-            text: '<a class="gray-link" href="http://www.wri.org/"><img style="width:15px;height:15px" src="/img/logo_wri_25.png"> World Resource Institute</a>',
+            text: '<a class="gray-link" href="http://www.wri.org/"><img style="width:15px;height:15px" src="img/logo_wri_25.png"> World Resource Institute</a>',
 
             align: 'right',
             x: 0,
@@ -111,26 +111,7 @@ $(function () {
                 enabled: false
             }
         }]
-    }, OnChartComplete);
-
-
-    function OnChartComplete() { // on complete
-        console.log("here");
-        var someHeight = -60;
-        var someWidth = 0;
-        var textX = $('#chartContainerES1').plotLeft + $('#chartContainerES1').plotWidth + someWidth;
-        var textY = $('#chartContainerES1').plotTop  + $('#chartContainerES1').plotHeight + someHeight;
-
-        var span = '<span id="watermarkDetails" style="position:absolute; text-align:center;">';
-        span += '<span><img src="/img/logo_wri_25.png"></span>';
-         span += '<span style="font-size: 11px; ">World Resource Institue</span>';
-        span += '</span>';
-
-        $("#watermark").append(span);
-        span = $('#watermarkDetails');
-        span.css('left', textX - span.width());
-        span.css('top', textY + span.height());
-    }
+    });
 
     // Chart init
     //$('#chartContainerES1').highcharts(chartContainerES1);
@@ -180,6 +161,25 @@ $(function () {
         },
         title: {
             text: "Geographical Distribution of China's OFDI Stock, 2004 and 2013"
+        },
+        subtitle: { // This is where the credits link will go
+
+            useHTML: true,
+            text: '<a class="gray-link" href="http://www.wri.org/"><img style="width:15px;height:15px" src="img/logo_wri_25.png"> World Resource Institute</a>',
+
+            align: 'right',
+            x: 0,
+            verticalAlign: 'bottom',
+            y: 10
+        },
+        credits: { // This is where the bitly link will go
+            useHTML: true,
+            text: '<a href="http://example.com">bitly.com</a>',
+            align: 'left',
+            position: {
+                align: 'left',
+                x: 10
+            }
         },
         xAxis: {
             categories: [ '2004','2012','2013 (excluding OFCs*']
@@ -262,6 +262,25 @@ $(function () {
         title: {
             //text: 'Contents of Highsoft\'s weekly fruit delivery'
             text: 'Outward FDI Stock'
+        },
+        subtitle: { // This is where the credits link will go
+
+            useHTML: true,
+            text: '<a class="gray-link" href="http://www.wri.org/"><img style="width:15px;height:15px" src="img/logo_wri_25.png"> World Resource Institute</a>',
+
+            align: 'right',
+            x: 0,
+            verticalAlign: 'bottom',
+            y: 10
+        },
+        credits: { // This is where the bitly link will go
+            useHTML: true,
+            text: '<a href="http://example.com">bitly.com</a>',
+            align: 'left',
+            position: {
+                align: 'left',
+                x: 10
+            }
         },
         plotOptions: {
             pie: {
