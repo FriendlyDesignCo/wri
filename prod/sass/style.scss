@@ -12,11 +12,15 @@
 
 .chart-container {
     font-family: $header-font-2;
+    margin-bottom: 20px !important;
     * {
         font-family: $header-font-2;
     }
     .highcharts-data-labels text {
         font-size: 12px !important;   
+    }
+    a.gray-link {
+        color: #909090;
     }
 }
 

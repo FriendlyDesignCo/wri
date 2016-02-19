@@ -23,7 +23,7 @@ $(function () {
     /  Chart documentation: http://www.highcharts.com/docs 
     /  Another good resource, for chart config: http://api.highcharts.com/highcharts 
     */
-    var chartContainerES1 = {  
+    $('#chartContainerES1').highcharts({  
         chart: {
             type: 'column'
         },
@@ -31,11 +31,23 @@ $(function () {
             text: "Tree Cover Loss in Indonesia's Primary Forests"
         },
         subtitle: { // This is where the bitly link will go
-            text: '<a href="http://example.com">bitly.com</a>',
-            align: 'left',
+
+            useHTML: true,
+            text: '<a class="gray-link" href="http://www.wri.org/"><img style="width:15px;height:15px" src="/img/logo_wri_25.png"> World Resource Institute</a>',
+
+            align: 'right',
             x: 0,
             verticalAlign: 'bottom',
             y: 10
+        },
+        credits: { // This is where the bitly link will go
+            useHTML: true,
+            text: '<a href="http://example.com">bitly.com</a>',
+            align: 'left',
+            position: {
+                align: 'left',
+                x: 10
+            }
         },
         xAxis: {
             categories: [ '2001','2002','2003','2004','2005','2006','2008','2009','2010','2011', '2012']
@@ -99,10 +111,29 @@ $(function () {
                 enabled: false
             }
         }]
-    };
+    }, OnChartComplete);
+
+
+    function OnChartComplete() { // on complete
+        console.log("here");
+        var someHeight = -60;
+        var someWidth = 0;
+        var textX = $('#chartContainerES1').plotLeft + $('#chartContainerES1').plotWidth + someWidth;
+        var textY = $('#chartContainerES1').plotTop  + $('#chartContainerES1').plotHeight + someHeight;
+
+        var span = '<span id="watermarkDetails" style="position:absolute; text-align:center;">';
+        span += '<span><img src="/img/logo_wri_25.png"></span>';
+         span += '<span style="font-size: 11px; ">World Resource Institue</span>';
+        span += '</span>';
+
+        $("#watermark").append(span);
+        span = $('#watermarkDetails');
+        span.css('left', textX - span.width());
+        span.css('top', textY + span.height());
+    }
 
     // Chart init
-    $('#chartContainerES1').highcharts(chartContainerES1);
+    //$('#chartContainerES1').highcharts(chartContainerES1);
 
     /* Download button 
     /  For consistency and ease of use, 
