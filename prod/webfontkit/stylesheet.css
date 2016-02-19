@@ -30,3 +30,11 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'Colfax';
+    src: url('Colfax-BlackItalic.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}

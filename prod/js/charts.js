@@ -12,6 +12,7 @@ $(function () {
         chart: {
             style: {
                 //fontFamily: '"'acumin-pro-condensed'\" "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif'
+                //fontFamily: "'acumin-pro-condensed', sans-serif"
             }
         }
     });
@@ -28,6 +29,13 @@ $(function () {
         },
         title: {
             text: "Tree Cover Loss in Indonesia's Primary Forests"
+        },
+        subtitle: { // This is where the bitly link will go
+            text: '<a href="http://example.com">bitly.com</a>',
+            align: 'left',
+            x: 0,
+            verticalAlign: 'bottom',
+            y: 10
         },
         xAxis: {
             categories: [ '2001','2002','2003','2004','2005','2006','2008','2009','2010','2011', '2012']

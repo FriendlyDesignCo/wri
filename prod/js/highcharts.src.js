@@ -1777,7 +1777,7 @@
         // watermark
         credits: {
             enabled: true,
-            text: 'World Resource Institute',
+            text: '<img style="width:10px;height:10px" src"/img/logo_wri_25.png"> World Resource Institute',
             href: 'http://www.wri.org/',
             position: {
                 align: 'right',
