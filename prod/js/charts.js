@@ -12,7 +12,6 @@ $(function () {
     
     <div id="chartContainerES{{chart_number}}" class="chart-container" style=""></div>
     <button id="button-chartContainerES{{chart_number}}">Download</button>
-    <div id="imgContainer"></div> 
     
     */
 
@@ -50,7 +49,7 @@ $(function () {
             }
         },
         xAxis: {
-            categories: [ '2001','2002','2003','2004','2005','2006','2008','2009','2010','2011', '2012']
+            categories: [ '2001','2002','2003','2004','2005','2006','2008','2009','2010','2011', '2012'] // x axis items
         },
         yAxis: {
             min: 0,
