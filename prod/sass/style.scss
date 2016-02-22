@@ -50,7 +50,7 @@
 }
 .menu-title {
     position: relative;
-     border-bottom: 1px solid lightgray;
+     border-bottom: 1px solid $color_2;
     z-index: 5;
     float: left;
     transition: transform .3s;
@@ -89,7 +89,7 @@ nav {
     right: 0;
     overflow-y: scroll;
     height: 100vh;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid $color_2;
 }
 
  
@@ -101,7 +101,7 @@ nav {
     text-align: center;
     padding-top: 20px;
     a {
-        color: lightgray;
+        color: $color_2;
         text-transform: uppercase;
         font-family: $header-font;
         font-size: 1.8rem;
@@ -244,13 +244,6 @@ body {
 
 
 /*full width images */
-.coversize{
-
-}
-
-.fixedsize{
-
-}
 
 .chapter0 {
     background-image: url("../img/cover.jpg");
