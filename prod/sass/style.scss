@@ -11,10 +11,10 @@
 
 
 .chart-container {
-    font-family: $header-font-2;
+    font-family: $header-font;
     margin-bottom: 20px !important;
     * {
-        font-family: $header-font-2;
+        font-family: $header-font;
     }
     .highcharts-data-labels text {
         font-size: 12px !important;   
@@ -39,7 +39,6 @@
         position: fixed;
         top: -50px;
 
-        //transform: translateY(-50px);
     }
     &.stick {
         -webkit-transition: all 0.3s;
@@ -245,7 +244,13 @@ body {
 
 
 /*full width images */
+.coversize{
 
+}
+
+.fixedsize{
+
+}
 
 .chapter0 {
     background-image: url("../img/cover.jpg");
@@ -483,9 +488,8 @@ body {
 
 h1, h2, h3, h4, h5, h6{ 
   font-family: $header-font; 
-  //font-weight: 300;
   margin-top: 0;
-  margin-bottom: 0px; /* 2rem; */ 
+  margin-bottom: 0px;  
   color: $main_color; }
 h1 { 
     font-size: 4.0rem; line-height: 1.0;  letter-spacing: -.1rem; text-transform: uppercase;
@@ -543,15 +547,7 @@ ul ul {
     position:relative;
     &:before {
         content:"\2610";
-        //display:block;
-        //width:6px;
-        //height:6px;
-        //content:".";
-        //text-indent:-9999px;
-        //top:12px;
-        //box-shadow:0px 0px 1px #888888;
         position:absolute;
-        // background-image:url("../img/squareoutline.ico");
         background-size:cover;
         font-family:Georgia;
         font-size:12px;
@@ -559,38 +555,6 @@ ul ul {
     }
 }
 
-
-.secondarybullet ul{
-    //list-style-image: url("../img/squareoutline.ico");
-    list-style-type: none;
-    color:$main_color;
-}
-
-.secondarybullet p{
-    position:relative;
-}
-
-
-
-.secondarybullet li{
-    //position:relative;
-    //list-style-type:none;
-}
-
-.secondarybullet li:before{
-    
-}
-
-.liststyle{
-    color:$main_color;
-}
-
-.liststyle p{
-    font-family:Georgia, serif;
-    line-height:3rem;
-    color:black;
-    margin:0;
-}
 
 .container ul li:before{
     content:"\25A0";
@@ -990,7 +954,6 @@ th, td{
 .body-container {
     position: relative;
     transition: all .3s;
-    //transform: translateX(-100px);
 }
 
 .menu-active {
