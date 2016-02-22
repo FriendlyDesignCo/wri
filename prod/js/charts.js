@@ -8,14 +8,14 @@ $(function () {
     var color_6 = '#007A4D'; // brand green tertiary
     var color_7 = '#97BD3D'; // brand green secondary
 
-    Highcharts.setOptions({
-        chart: {
-            style: {
-                //fontFamily: '"'acumin-pro-condensed'\" "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif'
-                //fontFamily: "'acumin-pro-condensed', sans-serif"
-            }
-        }
-    });
+    /* HTML template for charts
+    
+    <div id="chartContainerES{{chart_number}}" class="chart-container" style=""></div>
+    <button id="button-chartContainerES{{chart_number}}">Download</button>
+    <div id="imgContainer"></div> 
+    
+    */
+
 
     /********************** Chart 1 ***********************/
 
