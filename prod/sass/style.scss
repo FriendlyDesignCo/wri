@@ -10,6 +10,7 @@
 }
 
 
+
 .chart-container {
     font-family: $header-font;
     margin-bottom: 20px !important;
@@ -227,6 +228,10 @@ progress::-moz-progress-bar {
 
 body {
     padding-top: 50px;
+}
+
+img {
+    width: 100%;
 }
 
 .chapter0,
@@ -952,3 +957,4 @@ th, td{
 .menu-active {
     transform: translateX(-350px);
 }
+
