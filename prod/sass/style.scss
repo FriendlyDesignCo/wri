@@ -962,3 +962,34 @@ th, td{
     transform: translateX(-350px);
 }
 
+/////////////////// section divider /////////////////////
+
+.section-divider {
+    border-top: 15px solid $brand_yellow_primary;
+    background-image: url('../img/section3_mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+    .header-text {
+        h1,h6 {
+            color: white;
+        }
+        
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 50px 0;
+        width: 100%;
+        background-color: rgba(0,0,0,.8);
+    }
+}
+
+.section-divider__body {
+    background-color: rgba(240, 171, 0, .4);
+    padding-bottom: 50px;
+}
+
